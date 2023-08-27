@@ -6,7 +6,7 @@ const generateMarkDown = require("./utils/generateMarkdown")
 const questions = [
     {
         type: 'input',
-        name: 'project',
+        name: 'title',
         message: 'What is your project title?',
     },
     {
@@ -38,17 +38,24 @@ const questions = [
             "Creative Commons Zero v1.0", "Eclipse Public lic 2.0", "GNU Affero Gen Public lic v3.0", "GNU General Public lic v2.0",
             "GNU Lesser Gen Public lic v2.1", "Mozilla Public Lic 2.0", "The Unlicense", "None"
         ]
-    }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your e-mail?',
+    },
+    {
+        type: 'input',
+        name: 'gitHub',
+        message: 'What is your gitHub username?',
+    },
+
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile('markDown.md', markDownContent, (err) =>
-    err ? console.log(err)
-        : console.log('Successfully created markDown.md!')
-);
- }
- writeToFile()
+// function writeToFile(fileName, data) {
+//  }
+//  writeToFile()
 
 // TODO: Create a function to initialize app
 function init() {
