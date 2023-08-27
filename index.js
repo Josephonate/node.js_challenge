@@ -27,12 +27,28 @@ const questions = [
     {
         type: 'input',
         name: 'credits',
-        message: 'List your collaborators, if any, with links to their GitHub profiles.'
+        message: 'List your collaborators, if any, with links to their GitHub profiles.',
     },
+    {
+        type: 'list',
+        name: 'license',
+        choices: [
+            "Apache lic 2.0", "GNU Gen Public lic v3.0", "MIT lic",
+            'BSD 2-Clause"Simplified" lic', 'BSD 3-Clause "New" or "Revised" lic', "Boost Software lic 1.0", 
+            "Creative Commons Zero v1.0", "Eclipse Public lic 2.0", "GNU Affero Gen Public lic v3.0", "GNU General Public lic v2.0",
+            "GNU Lesser Gen Public lic v2.1", "Mozilla Public Lic 2.0", "The Unlicense", "None"
+        ]
+    }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile('markDown.md', markDownContent, (err) =>
+    err ? console.log(err)
+        : console.log('Successfully created markDown.md!')
+);
+ }
+ writeToFile()
 
 // TODO: Create a function to initialize app
 function init() {
