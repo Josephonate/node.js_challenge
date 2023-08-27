@@ -33,10 +33,10 @@ const questions = [
         type: 'list',
         name: 'license',
         choices: [
-            "Apache lic 2.0", "GNU Gen Public lic v3.0", "MIT lic",
-            'BSD 2-Clause"Simplified" lic', 'BSD 3-Clause "New" or "Revised" lic', "Boost Software lic 1.0", 
-            "Creative Commons Zero v1.0", "Eclipse Public lic 2.0", "GNU Affero Gen Public lic v3.0", "GNU General Public lic v2.0",
-            "GNU Lesser Gen Public lic v2.1", "Mozilla Public Lic 2.0", "The Unlicense", "None"
+            "Apache--2.0", "GNU_Gen_Public_v3.0", "MIT",
+            'BSD--2--Clause', 'BSD--3--Clause', "Boost_Software_1.0", 
+            "Creative_Commons_Zero_v1.0", "Eclipse_Public_2.0", "GNU_Affero_Gen_Public_v3.0", "GNU_General_Public_v2.0",
+            "GNU_Lesser_Gen_Public_v2.1", "Mozilla_Public_2.0", "The_Unlicense", "None"
         ]
     },
     {
