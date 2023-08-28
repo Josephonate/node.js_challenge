@@ -64,9 +64,9 @@ function init() {
         .then((answers) => {
             const markDownContent = generateMarkDown(answers);
 
-            fs.writeFile('markDown.md', markDownContent, (err) =>
+            fs.writeFile('README.md', markDownContent, (err) =>
                 err ? console.log(err)
-                    : console.log('Successfully created markDown.md!')
+                    : console.log('Successfully created README.md!')
             );
         });
 }
