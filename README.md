@@ -21,3 +21,4 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 https://watch.screencastify.com/v/YeSjLYSaVc0dFYjUnHpY
+![image](https://github.com/Josephonate/node.js_challenge/assets/131502920/0e4cd63b-0917-4467-92fc-54aa53ed9231)
